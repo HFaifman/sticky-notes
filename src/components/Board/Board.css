@@ -1,0 +1,38 @@
+.board {
+  position: relative;
+  min-height: 620px;
+  /* Notes are bounded in the drag hook; clipping also prevents their shadows
+     from creating scrollable overflow at the board's edges and corners. */
+  overflow: hidden;
+  border: 1px solid #e4e6ea;
+  border-radius: 15px;
+  background-color: #fafbfc;
+  background-image: radial-gradient(#dfe2e8 0.8px, transparent .8px);
+  background-size: 19px 19px;
+  box-shadow: inset 0 1px 5px #252a3505;
+}
+.board.placement-mode {
+  cursor: crosshair;
+  border-color: #aaa2e0;
+}
+.board-label {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 17px 19px 17px 165px;
+  pointer-events: none;
+}
+.board-label> span:first-child {
+  font-size: 9px;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+  color: #a1a6b0;
+}
+.board-subtitle {
+  font-size: 10px;
+  color: #b0b5be;
+}

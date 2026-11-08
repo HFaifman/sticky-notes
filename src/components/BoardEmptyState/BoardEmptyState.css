@@ -1,0 +1,40 @@
+.empty-state {
+  position: absolute;
+  left: 50%;
+  top: 47%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 280px;
+  pointer-events: none;
+}
+.empty-illustration {
+  width: 54px;
+  height: 54px;
+  border: 1px solid #e9e6f5;
+  border-radius: 16px;
+  background: #f4f1ff;
+  color: #8a80c9;
+  display: grid;
+  place-items: center;
+  font-size: 27px;
+  margin: 0 auto 15px;
+  transform: rotate(-5deg);
+}
+.empty-state h2 {
+  font: 700 15px Manrope, sans-serif;
+  margin: 0 0 7px;
+}
+.empty-state p {
+  font-size: 11px;
+  color: #999fab;
+  line-height: 1.6;
+  margin: 0 0 13px;
+}
+.empty-state button {
+  pointer-events: auto;
+  border: 0;
+  background: none;
+  color: #756bb7;
+  font: 600 11px 'DM Sans';
+  cursor: pointer;
+}

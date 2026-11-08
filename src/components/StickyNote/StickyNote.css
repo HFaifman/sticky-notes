@@ -1,0 +1,121 @@
+.note {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px 3px 7px 7px;
+  box-shadow: 0 5px 14px #252a3520, 0 1px 3px #252a3512;
+  overflow: visible;
+  transition: box-shadow .12s;
+  min-width: 160px;
+  min-height: 130px;
+}
+.note.is-dragging {
+  box-shadow: 0 13px 27px #252a3530, 0 2px 5px #252a3515;
+  opacity: .96;
+}
+.note-yellow {
+  background: #fff0b5;
+}
+.note-pink {
+  background: #ffdae4;
+}
+.note-blue {
+  background: #d9edfa;
+}
+.note-green {
+  background: #daf2df;
+}
+.note-purple {
+  background: #e8e0ff;
+}
+.note-header {
+  height: 31px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  padding: 0 9px;
+  gap: 7px;
+  border-bottom: 1px solid #0000000b;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+}
+.note-header:active {
+  cursor: grabbing;
+}
+.drag-grip {
+  font-size: 15px;
+  color: #77736b;
+  opacity: .55;
+}
+.note-caption {
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #77736b;
+  opacity: .75;
+}
+.note-actions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: auto;
+}
+.note-actions select {
+  font: 9px 'DM Sans';
+  color: #716d66;
+  border: 0;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  max-width: 67px;
+}
+.delete-button {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  background: #0000000a;
+  border-radius: 5px;
+  color: #6c665e;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+}
+.delete-button:hover {
+  background: #00000018;
+}
+.note-editor {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  flex: 1;
+  resize: none;
+  border: 0;
+  outline: none;
+  background: transparent;
+  padding: 13px 14px 18px;
+  color: #494640;
+  font: 12px/1.65 'DM Sans', sans-serif;
+}
+.note-editor::placeholder {
+  color: #928c7c;
+  opacity: .7;
+}
+.resize-handle {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 19px;
+  height: 19px;
+  display: grid;
+  place-items: center;
+  cursor: nwse-resize;
+  touch-action: none;
+}
+.resize-handle span {
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid #817b70;
+  border-bottom: 2px solid #817b70;
+  opacity: .55;
+}

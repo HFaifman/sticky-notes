@@ -1,0 +1,17 @@
+.footer {
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #a9aeb7;
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+.footer> span+span {
+  font-size: 9px;
+  letter-spacing: 0;
+}
+.footer-dot {
+  padding: 0 5px;
+  color: #c3bfdf;
+}
